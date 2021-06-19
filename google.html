@@ -1,0 +1,80 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <title>fesal warioba</title>
+
+<style>
+
+
+#main {
+    min-height: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 250px 70px 70px 250px;
+    grid-template-areas: 
+    ". logo ."
+    ". search ."
+    ". flexbox ."
+    ". google-text .";
+}
+
+#logo {
+    grid-area: logo;
+    justify-self: center;
+    align-self: end;
+}
+#search {
+    grid-area: search;
+    height: 30px;
+    width: 150%;
+    align-self: center;
+    justify-self: center;
+    border: 1px solid rgba(0, 0, 0, 0.151);
+}
+
+#search:focus {
+    box-shadow: 1px 1px 5px grey;
+}
+#search:hover {
+    box-shadow: 1px 1px 5px grey;
+}
+
+#flexbox {
+    display: flexbox;
+    grid-area: flexbox;
+    justify-self: center;
+    align-self: center;
+}
+#google-search-btn {
+    border: none;
+    font-size: 15px;
+    color: black;
+    margin-right: 25px;
+    padding: 7px 15px 7px 15px;
+    border-radius: 3px;
+}
+#random-search-btn {
+    border: none;
+    font-size: 15px;
+    color: black;
+    padding: 7px 15px 7px 15px;
+    border-radius: 3px;
+}
+
+</style>
+
+</head>
+<body>
+    
+    <nav id="main">
+        <a href="#" id="pp"><img src="pp.png"></a>
+        <input type="text" id="search">
+        <nav id="flexbox">
+            <button id="google-search-btn">Google Search</button><button id="random-search-btn">I'm Feeling Lucky</button>
+        </nav>
+    </nav>
+    
+</body>
+</html>
